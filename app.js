@@ -4,8 +4,8 @@ const app = express();
 const graphqlHTTP = require('express-graphql');
 const graphQLSchema = require('swagger-to-graphql');
 
-const proxyUrl = 'https://petstore.swagger.io/v2';
-const pathToSwaggerSchema = `${__dirname}/api/s.json`;
+const proxyUrl = 'https://harborserver/api';
+const pathToSwaggerSchema = `${__dirname}/api/app.json`;
 const customHeaders = {
   Authorization: 'Basic YWRkOmJhc2ljQXV0aA=='
 };
